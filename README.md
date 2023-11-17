@@ -2,7 +2,7 @@
 
 Implemente a função int busca(int chave, char *nome\_arquivo\_metadados, char *nome\_arquivo\_indice, char *nome\_arquivo\_dados) que recebe como parâmetro a chave a ser buscada e os nomes dos 3 arquivos que armazenam a árvore B+ e retorna o endereço do nó em que a chave está ou que deveria estar. A função deve imprimir os nós avaliados até que o nó onde a chave está ou deveria estar tenha sido encontrado. Use os arquivos fonte disponibilizados no arquivo ab.zip. 
 
-A árvore armazena registros de clientes, cuja estrutura e funções auxiliares estão no arquivo cliente.c.
+A árvore armazena registros de clientes, cuja estrutura e funções auxiliares estão no arquivo cliente.c. Uma árvore exemplo é fornecida e está disponível nos arquivos metadados.dat (que contém os metadados), indice.dat (que contém os nós internos da árvore) e clientes.dat (que contém os nós folha da árvore).
 
 #### Entrada
 
