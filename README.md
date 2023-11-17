@@ -2,12 +2,14 @@
 
 Implemente a função int busca(int chave, char *nome\_arquivo\_metadados, char *nome\_arquivo\_indice, char *nome\_arquivo\_dados) que recebe como parâmetro a chave a ser buscada e os nomes dos 3 arquivos que armazenam a árvore B+ e retorna o endereço do nó em que a chave está ou que deveria estar. A função deve imprimir os nós avaliados até que o nó onde a chave está ou deveria estar tenha sido encontrado. Use os arquivos fonte disponibilizados no arquivo ab.zip. 
 
+A árvore armazena registros de clientes, cuja estrutura e funções auxiliares estão no arquivo cliente.c.
+
 #### Entrada
 
 - chave a ser buscada
-- nome do arquivo de metadados (esse arquivo contém a ordem d da árvore B+, o ponteiro para a raiz da árvore, e um flag que indica se a raiz é folha ou um nó interno)
-- nome do arquivo de índice (esse arquivo contém os nós internos da árvore B+)
-- nome do arquivo de dados (esse arquivo contém os nós folhas da árvore B+)
+- nome do arquivo de metadados (esse arquivo contém a ordem d da árvore B+, o ponteiro para a raiz da árvore, e um flag que indica se a raiz é folha ou um nó interno. Sua estrutura e funcões auxiliares estão no arquivo metadados.c)
+- nome do arquivo de índice (esse arquivo contém os nós internos da árvore B+, e sua estrutura e funções auxiliares estão no arquivo no\_interno.c)
+- nome do arquivo de dados (esse arquivo contém os nós folhas da árvore B+, e sua estrutura e funções auxiliares estão no arquivo no\_folha.c)
 
 #### Saída 
 
@@ -58,9 +60,9 @@ NO FOLHA: (m = 2, pt pai = 48, pt prox = 856)
 
 Use essa função caso você queira ver o conteúdo dos três arquivos de entrada. Não esqueça de comentar o uso dela antes de entregar a versão final do seu código, caso contrário isso afetará a saída gerada pelo seu programa, e os casos de teste irão falhar. 
 
-#### Arquivos a entregar
+#### Arquivos a modificar
 
-Entregue apenas o arquivo **arvore\_b\_mais.c**, com sua função de busca implementada. Os demais arquivos serão adicionados automaticamente pelo Run.Codes na hora da compilação. Por isso é importante que você faça modificações apenas no arquivo arvore\_b\_mais.c. 
+Modifique apenas o arquivo **arvore\_b\_mais.c**, com sua função de busca implementada. 
 
 #### Dicas Importantes: 
 
@@ -68,4 +70,3 @@ Entregue apenas o arquivo **arvore\_b\_mais.c**, com sua função de busca imple
 - A entrada e a saída já são tratadas no arquivo fornecido para ler e imprimir os dados no formato esperado pela questão. Vocês devem APENAS implementar a função solicitada no problema
 - Não use arquivos .h (coloque todas as definições de tipo no arquivo .c)
 - Não altere/delete o arquivo "cases_data.bin"
-- Veja outras dicas em http://www.ic.uff.br/~vanessa/courses/runcodes.html
