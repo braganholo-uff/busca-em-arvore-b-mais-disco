@@ -1,19 +1,12 @@
+#ifdef _MSC_VER
+#define _CRT_SECURE_NO_WARNINGS
+#endif
+
 #include <string.h>
 #include <stdlib.h>
 #include <stdarg.h>
 
-#include "cliente.c"
-
-typedef struct NoFolha {
-    // m eh o numero total de registros armazenados no noh
-    int m;
-    // ponteiro para o noh pai
-    int pont_pai;
-    // ponteiro para o proximo noh folha
-    int pont_prox;
-    // essa lista tera sempre m clients
-    TCliente **clientes;
-} TNoFolha;
+#include "no_folha.h"
 
 /*
  * A função imprime um nó folha

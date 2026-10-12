@@ -1,6 +1,10 @@
+#ifdef _MSC_VER
+#define _CRT_SECURE_NO_WARNINGS
+#endif
+
 #include <stdio.h>
-#include "metadados.c"
-#include "no_interno.c"
+#include <stdlib.h>
+#include "arvore_b_mais.h"
 
 void imprime_arquivos() {
     int i;
@@ -72,5 +76,5 @@ int main () {
     int pont = busca(chave, "metadados.dat", "indice.dat", "clientes.dat");
 
     //Imprime resultado da função
-    printf("RESULTADO DA BUSCA: %d", pont);
+    printf("RESULTADO DA BUSCA: %d\n", pont);
 }

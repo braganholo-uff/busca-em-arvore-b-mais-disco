@@ -1,20 +1,13 @@
+#ifdef _MSC_VER
+#define _CRT_SECURE_NO_WARNINGS
+#endif
+
 #include <string.h>
 #include <stdlib.h>
 #include <stdarg.h>
 #include <stdio.h>
 
-typedef struct NoInterno {
-    // m eh o numero total de chaves armazenados no noh
-    int m;
-    // ponteiro para o noh pai
-    int pont_pai;
-    // flag que diz se noh aponta pra folha ou nao
-    int aponta_folha;
-    // essa lista tera sempre m + 1 ponteiros
-    int *p;
-    // essa lista tera sempre m chaves
-    int *chaves;
-} TNoInterno;
+#include "no_interno.h"
 
 /*
  * A função imprime um nó interno

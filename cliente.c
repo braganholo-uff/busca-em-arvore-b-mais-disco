@@ -1,13 +1,12 @@
+#ifdef _MSC_VER
+#define _CRT_SECURE_NO_WARNINGS
+#endif
+
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
 
-#define TAM_NOME 100
-
-typedef struct Cliente {
-    int cod_cliente;
-    char nome[TAM_NOME];
-} TCliente;
+#include "cliente.h"
 
 void imprime_cliente(TCliente *cliente)
 {
